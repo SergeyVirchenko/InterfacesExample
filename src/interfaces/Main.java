@@ -7,15 +7,31 @@ import interfaces.util.View;
 
 public class Main {
 
-    static IClickable clickListener = new IClickable() {
-        @Override
-        public void onClick() {
-            System.out.println("OnClick in Main static implementation");
-        }
-    };
-
     public static void main(String[] args) {
+
         new Runner() {
+
+            void bar() {
+                TouchSystem ts = new TouchSystem();
+
+                ts.setClickListener(new IClickable() {
+                    @Override
+                    public void onClick() {
+                        System.out.println("OnClick in anonymous realization");
+                    }
+                });
+                System.out.println("Outer");
+                ts.onSystemClickEvent();
+            }
+
+
+            IClickable clickListener = new IClickable() {
+                @Override
+                public void onClick() {
+                    System.out.println("OnClick in Main static implementation");
+                }
+            };
+
             @Override
             public void onClick() {
                 System.out.println("OnClick in Runner implementation");
