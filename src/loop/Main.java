@@ -20,5 +20,11 @@ public class Main {
         }
 
         myClass.runListLoop();
+
+        MyClass myNewClass = new MyClass();
+
+        MyInterface i = myNewClass;
+
+        
     }
 }
