@@ -25,6 +25,6 @@ public class Main {
 
         MyInterface i = myNewClass;
 
-        
+
     }
 }
