@@ -3,12 +3,17 @@ package enums;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
+import java.util.Random;
 
 public class EnumMain {
 
     public static void main(String args[]) {
         enumEquals();
-
+        Random r = new Random();
+        Apple[] arr = new Apple[20];
+        for (int i = 0; i < 20; i++) {
+            arr[i] = Apple.values()[r.nextInt(Apple.values().length)];
+        }
     }
 
     public static void firstExample() {
