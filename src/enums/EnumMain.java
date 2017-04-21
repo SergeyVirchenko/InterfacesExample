@@ -5,15 +5,24 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.Random;
 
+import static enums.Apple.*;
+
 public class EnumMain {
 
     public static void main(String args[]) {
         enumEquals();
         Random r = new Random();
         Apple[] arr = new Apple[20];
+        Apple val = Cortland;
+        int total = 0;
+        String s;
         for (int i = 0; i < 20; i++) {
             arr[i] = Apple.values()[r.nextInt(Apple.values().length)];
+            System.out.println(arr[i] + " $= " + arr[i].getPrice());
+            total += arr[i].getPrice();
         }
+        System.out.print(total);
+
     }
 
     public static void firstExample() {

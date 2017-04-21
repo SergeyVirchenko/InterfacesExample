@@ -12,6 +12,13 @@ import static testcase.LoanType.*;
  */
 public class User {
 
+    List<Object> goods;
+
+    public User(){
+        goods = new ArrayList<>();
+        goods.add(new Object());
+    }
+
     public static int staticVal = 0;
     public int val = 0;
 
