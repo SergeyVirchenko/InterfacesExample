@@ -15,6 +15,4 @@ public class Lair {
         return this.inhabitant;
     }
 
-    public static <T> void setIfNull(T t) {
-    }
 }

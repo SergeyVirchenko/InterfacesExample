@@ -24,8 +24,6 @@ public class LairTyped<INHABITANT> {
         if (lair.getInhabitant() == null) {
 //            lair.setInhabitant(t);
         }
-
-
     }
 
 }
