@@ -100,11 +100,11 @@ public class App {
 //        lairTyped = lairTyped1;
 
         //Upperbound
-        UpperBoundLair<Troll> goblinLair = new UpperBoundLair<>();
+//        UpperBoundLair<Troll> goblinLair = new UpperBoundLair<>();
 //        goblinLair.setInhabitant(new Goblin());
-        goblinLair.tick();
+//        goblinLair.tick();
 
-        goblinLair.test(goblinLair);
+//        goblinLair.test(goblinLair);
     }
 
     public static <T> LairTyped<T> maxx(T x, T y) {
